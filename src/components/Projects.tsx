@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Projects.css";
+import "../styles/projects.css";
 
 import stockImage from "../assets/stock.png";
 import financeImage from "../assets/finaccne.png";

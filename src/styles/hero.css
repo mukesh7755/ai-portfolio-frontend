@@ -1,0 +1,50 @@
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content-centered {
+  max-width: 800px;
+}
+
+.hero-content-centered h1 {
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00f5ff, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neon-glow {
+  text-shadow:
+    0 0 8px #00f5ff,
+    0 0 20px #7a5cff;
+}
+
+.hero-role {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #cbd5e1;
+}
+
+.hero-description {
+  margin-top: 25px;
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

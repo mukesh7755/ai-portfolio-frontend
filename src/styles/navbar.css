@@ -1,0 +1,122 @@
+/* ================================
+   Navbar Base
+================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  background: rgba(15, 23, 42, 0.4);
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+}
+
+/* Scroll effect */
+.navbar.scrolled {
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00f5ff;
+  letter-spacing: 1px;
+}
+
+/* ================================
+   Navigation Links
+================================ */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #00f5ff, #7a5cff);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.nav-links a.active {
+  color: #00f5ff;
+}
+
+/* ================================
+   Hamburger Menu
+================================ */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 3px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+/* ================================
+   Mobile Styles
+================================ */
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.95);
+    padding: 20px;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

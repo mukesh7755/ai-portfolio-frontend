@@ -1,0 +1,151 @@
+:root {
+  --primary: #00f5ff;
+  --secondary: #7a5cff;
+  --bg-dark: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #0a0f1f);
+  color: white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+.glass {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  transition: 0.4s ease;
+}
+
+/* Safari support */
+@supports (
+  (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))
+) {
+  .glass {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(0, 245, 255, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+main {
+  margin-top: 100px;
+}
+section {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.neon-glow {
+  text-shadow:
+    0 0 5px #00f5ff,
+    0 0 10px #00f5ff,
+    0 0 20px #7a5cff;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+body {
+  background: #0b0f19;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+section {
+  padding: 120px 10%;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  padding: 40px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+body {
+  margin: 0;
+  background: #0b0f19;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  position: relative;
+  z-index: 2;
+}
+html {
+  scroll-behavior: smooth;
+}

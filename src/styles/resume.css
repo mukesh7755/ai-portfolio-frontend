@@ -1,0 +1,92 @@
+/* ===============================
+   Resume Section
+================================ */
+
+.resume-section {
+  padding: 120px 10%;
+  text-align: center;
+  background: linear-gradient(180deg, #0b0f19, #020617);
+  color: white;
+}
+
+.resume-section h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #00f5ff, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resume-section p {
+  color: #94a3b8;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* ===============================
+   Resume Card
+================================ */
+
+.resume-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.4s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0, 245, 255, 0.15);
+}
+
+/* ===============================
+   Download Button
+================================ */
+
+.resume-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+
+  background: linear-gradient(90deg, #00f5ff, #7a5cff);
+
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(122, 92, 255, 0.4);
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 80px 8%;
+  }
+
+  .resume-section h2 {
+    font-size: 28px;
+  }
+
+  .resume-card {
+    padding: 35px 25px;
+  }
+}

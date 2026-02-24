@@ -1,0 +1,58 @@
+.about-section {
+  padding: 100px 10%;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.highlight-name {
+  color: #00f5ff;
+}
+
+.about-role {
+  margin: 15px 0;
+  color: #94a3b8;
+}
+
+.about-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00f5ff, #7a5cff);
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #00f5ff;
+  border-radius: 25px;
+  color: #00f5ff;
+  text-decoration: none;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.about-image img {
+  width: 280px;
+  border-radius: 50%;
+  border: 4px solid #00f5ff;
+}

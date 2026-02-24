@@ -1,0 +1,44 @@
+.coding-profiles-section {
+  padding: 100px 10%;
+  background: #0a192f;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 34px;
+  color: #64ffda;
+  margin-bottom: 50px;
+}
+
+.coding-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coding-card {
+  background: #112240;
+  padding: 30px;
+  border-radius: 16px;
+  width: 230px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.1);
+}
+
+.coding-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+.coding-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  color: #00f5ff;
+  font-weight: bold;
+}
